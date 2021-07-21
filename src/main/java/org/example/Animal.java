@@ -10,4 +10,8 @@ public class Animal {
     String favoriteFood;
     String preferredRecreationalActivity;
     
+    public Animal(String name){
+        this.name = name;
+    }
+    
 }

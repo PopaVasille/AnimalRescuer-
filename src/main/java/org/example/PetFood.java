@@ -11,4 +11,7 @@ public class PetFood {
     LocalDateTime expiryDate;
     boolean inStock;
     
+    public PetFood(String name){
+        this.name = name;
+    }
 }
