@@ -8,23 +8,25 @@ public class App
 {
     public static void main( String[] args ){
         Animal luck = new Animal("Luck");
-        luck.age = 1;
-        luck.LevelOfHealth = 10;
-        luck.favoriteFood = "Royal Canin boabe";
-        luck.moodLevel = 9;
-        luck.feelingHungry = 1;
-        luck.preferredRecreationalActivity = "Play cu gaina";
+        luck.setAge(1);
+        luck.setLevelOfHealth(10);
+        luck.setFavoriteFood("Royal Canin boabe");
+        luck.setMoodLevel(9);
+        luck.setFeelingHungry(1);
+        luck.setPreferredRecreationalActivity("Play cu gaina de cauciuc");
+        
         
         RecreationActivity playCuGaina = new RecreationActivity("Play cu gaina");
         
         Rescuer bebe = new Rescuer("Bebe");
-        bebe.amountAvailable = 100;
+        
+        bebe.setName("Bebe");
         
         PetFood boabe = new PetFood("Royal Canin");
-        boabe.price = 15.23 ;
-        boabe.quantity = 9.50;
-        boabe.expiryDate  = LocalDateTime.of(2022,10,20,0,0);
-        boabe.inStock = true;
+        boabe.setPrice(15.23);
+        boabe.setQuantity(9.50);       
+        boabe.setExpiryDate(LocalDateTime.of(2021,21,7,0,0));
+        boabe.setInStock(true);
         
         MedicalStaff drAnghel = new MedicalStaff("Anghel Rusu", "Medicina Generala");
         
