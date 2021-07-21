@@ -1,5 +1,5 @@
 package org.example;
-import java.util.Date;
+import java.time.LocalDateTime;
 /**
  * Hello world!
  *
@@ -19,7 +19,7 @@ public class App
         RecreationActivity playCuGaina = new RecreationActivity();
         playCuGaina.name = "Play cu gaina";
         
-        Adoption bebe = new Adoption();
+        Rescuer bebe = new Rescuer();
         bebe.name = "Bebe";
         bebe.amountAvailable = 100;
         
@@ -27,13 +27,18 @@ public class App
         boabe.name = "Royal Canin";
         boabe.price = 15.23 ;
         boabe.quantity = 9.50;
-        boabe.expirationDate = new Date(30,05,2022);
-        boabe.availabilityInStock = 23;
+        boabe.expiryDate  = LocalDateTime.of(2022,10,20,0,0);
+        boabe.inStock = true;
         
-        Veterinarian drAnghel = new Veterinarian();
+        MedicalStaff drAnghel = new MedicalStaff();
         drAnghel.name = "Anghel Rusu";
         drAnghel.specialization = "medicina generala";
         
+        
+        Game game = new Game();
+        game.rescuer = bebe;
+        game.animal = luck;
+        game.medic = drAnghel;
         
                 
         

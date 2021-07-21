@@ -1,14 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.example;
 
-/**
- *
- * @author vpopa
- */
+
 public class Animal {
+    String name;
+    int age;
+    int LevelOfHealth;
+    int feelingHungry;
+    int moodLevel;
+    String favoriteFood;
+    String preferredRecreationalActivity;
     
 }
