@@ -25,7 +25,7 @@ public class App
         PetFood boabe = new PetFood("Royal Canin");
         boabe.setPrice(15.23);
         boabe.setQuantity(9.50);       
-        boabe.setExpiryDate(LocalDateTime.of(2021,21,7,0,0));
+        boabe.setExpiryDate(LocalDateTime.of(2021,12,7,0,0));
         boabe.setInStock(true);
         
         MedicalStaff drAnghel = new MedicalStaff("Anghel Rusu", "Medicina Generala");
@@ -37,7 +37,8 @@ public class App
         game.animal = luck;
         game.medic = drAnghel;
         
-                
+        bebe.feedAnimal(luck, boabe);
+        bebe.doStuff(luck, playCuGaina);
         
     }
 }

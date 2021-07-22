@@ -26,4 +26,10 @@ public class Rescuer {
         this.amountAvailable = amountAvailable;
     }
     
+    public void feedAnimal(Animal animal, PetFood food){
+        System.out.println(this.name + " la hranit pe "+ animal.getName()+ " cu "+ food.getName()+" !");
+    }
+    public void doStuff(Animal animal, RecreationActivity recreationActivity){
+        System.out.println(this.name + " s-a jucat impreuna cu "+ animal.getName()+" activitatea lui preferata, si anume "+ recreationActivity.getName()+" !");
+    }
 }
